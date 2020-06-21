@@ -9,7 +9,10 @@
 if __name__=="__main__":
     N = int(input())
     m = int(input())
-    error_key = list(map(str,input().split()))
+    if m>0:
+        error_key = list(map(str,input().split()))
+    else:
+        error_key =[]
     channels=[]
     cur_c = 100
     for i in range(0,1000001):
