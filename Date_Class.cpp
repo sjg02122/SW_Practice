@@ -25,6 +25,21 @@ class Date {
   void AddYear(int inc);
 
   void ShowDate();
+
+  Date(){
+  std::cout << "기본 생성자 호출\n";
+  year_ = 1995;
+  month_ = 7;
+  day_ = 12;
+  }
+
+  Date(int year,int month, int day){
+  std::cout << "생성자 오버 로딩\n";
+  year_ = year;
+  month_ = month;
+  day_ = day;
+  }
+
 };
 
 void Date::ShowDate()
